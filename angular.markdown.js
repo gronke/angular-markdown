@@ -16,7 +16,7 @@ MarkdownModule.directive('markdown', function () {
 	var converter = new Showdown.converter();
 
 	return {
-		restrict: 'E',
+		restrict: 'EA',
 		require: '?ngModel',
 		link: function (scope, element, attrs, model) {
 			// Check for extensions
